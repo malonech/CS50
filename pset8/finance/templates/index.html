@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+<h1 text-align="center">My Portfolio</h1>
+    <br>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Stock</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in range(size)%}
+            <tr>
+                <td>{{ stock[i] }}</td>
+                <td>{{ name[i] }}</td>
+                <td>{{ qty[i] }}</td>
+                <td>{{ price[i] }}</td>
+                <td>{{ total[i] }}</td>
+            </tr>
+            <tr>
+            {% endfor %}
+                <td>Balance</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                {% for row in balance %}
+                <td>${{ row.cash }}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>Total Value</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>${{ networth }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

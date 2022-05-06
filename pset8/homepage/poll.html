@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>FFH</title>
+        <style>
+        h1 {text-align: center;}</style>
+
+    </head>
+    <body>
+        <h1>Fantasy Football Top Player Poll</h1>
+
+        <div class="row">
+        <div class="column">
+        <h4>Top Running Back?</h4>
+        <form>
+            Saquon: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+            MacCaffrey: <input type="radio" name="vote" value="1" onclick="getVote(this.value)"><br>
+            Elliot: <input type="radio" name="vote" value="2" onclick="getVote(this.value)"><br>
+            Cook: <input type="radio" name="vote" value="3" onclick="getVote(this.value)"><br>
+            Jones: <input type="radio" name="vote" value="4" onclick="getVote(this.value)">
+        </form>
+        <br><br>
+        <h4>Top Wide Receiver?</h4>
+        <form>
+            Thomas: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+            Adams: <input type="radio" name="vote" value="1" onclick="getVote(this.value)"><br>
+            Jones: <input type="radio" name="vote" value="2" onclick="getVote(this.value)"><br>
+            Hopkins: <input type="radio" name="vote" value="3" onclick="getVote(this.value)"><br>
+            Moore: <input type="radio" name="vote" value="4" onclick="getVote(this.value)">
+        </form>
+        <br><br>
+        <h4>Top Quarterback?</h4>
+        <form>
+            Mahomes: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+            Jackson: <input type="radio" name="vote" value="1" onclick="getVote(this.value)"><br>
+            Prescott: <input type="radio" name="vote" value="2" onclick="getVote(this.value)"><br>
+            Watson: <input type="radio" name="vote" value="3" onclick="getVote(this.value)"><br>
+            Jones: <input type="radio" name="vote" value="4" onclick="getVote(this.value)">
+        </form>
+        <br><br>
+        <h4>Top Tight End?</h4>
+        <form>
+            Kittle: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+            Kelce: <input type="radio" name="vote" value="1" onclick="getVote(this.value)"><br>
+            Ertz: <input type="radio" name="vote" value="2" onclick="getVote(this.value)"><br>
+            Engram: <input type="radio" name="vote" value="3" onclick="getVote(this.value)"><br>
+            Smith Jr.: <input type="radio" name="vote" value="4" onclick="getVote(this.value)">
+        </form>
+        </div>
+
+        <div class="column">
+            <a href="https://www.nfl.com/players/davante-adams/">
+            <img src="Davante.jpg" alt="Davante Adams" width="500" height="500">
+            </a>
+        </div>
+        </div>
+
+        <br><br>
+
+        <button onClick="window.location.reload();">Submit</button>
+
+        <br><br><br>
+        <hr>
+        <h4 style="text-decoration: underline;">Don't Miss These Articles</h4>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="rankings.html">2020 Dynasty Player Rankings</a></li>
+            <li><a href="sleepers.html">Top 5 Sleepers for 2020</a></li>
+            <li><a href="mossed.html">Get Mossed</a></li>
+            <li><a href="poll.html">Top Player Poll</a></li>
+        </ul>
+    </body>
+</html>

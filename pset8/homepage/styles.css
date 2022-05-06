@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding-left: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

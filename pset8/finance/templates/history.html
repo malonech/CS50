@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+<h1 text-align="center">Transaction History</h1>
+<br><br>
+<div>
+    <table class="table">
+        <tr>
+            <th>Stock</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Total Cost</th>
+            <th>Timestamp</th>
+        </tr>
+        {% for row in transactions%}
+        <tr>
+            <td>{{ row.Stock }}</td>
+            <td>{{ row.Shares }}</td>
+            <td>{{ row.Price }}</td>
+            <td>{{ row.Total }}</td>
+            <td>{{ row.Timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

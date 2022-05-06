@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block style %}
+    body{
+            background-image: url({{url_for('static', filename='images/run2.jpg')}});
+            background-repeat: no-repeat;
+            background-size: 100%, 100%;
+        }
+{% endblock %}
+
+{% block main %}
+<div class="row" style="width:100%">
+    <div class="column" style="width:20%" align="center">
+        <br><br><br><br>
+        <h2 style="color: white">Welcome!</h2>
+        <br>
+        <form action="/login" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit" style="background-color: white; border-color: white; color: green">Log In</button>
+    </form>
+    </div>
+
+    <div class="column" style="width:60%" align="center">
+    </div>
+
+    <div class="column" style="width:20%" align="center">
+    </div>
+</div>
+
+{% endblock %}

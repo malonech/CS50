@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <p>{{ value['name'] }} ({{ value['symbol'] }})</p>
+    <p>${{ value['price'] }}</p>
+{% endblock %}
